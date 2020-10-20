@@ -1,0 +1,59 @@
+@import "fonts";
+@import "rouge-github";
+
+@charset "utf-8";
+
+// Define defaults for each variable.
+$base-font-family: "Ubuntu", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16.5px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.65 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #292929 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #ad1457 !default;
+
+$grey-color:       #8a8a8a !default;
+$grey-color-light: lighten($grey-color, 20%) !default;
+$grey-color-dark:  darken($grey-color, 35%) !default;
+
+$crimson-color:         #c2185b;
+$crimson-color-light:   #d81b60;
+$crimson-color-very-light:   lighten($crimson-color, 20%) !default;
+$crimson-color-dark:     #880e4f;
+
+$orange-color:           #5b2c6f;
+
+$visited-link-color:  #512e5f !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout"
+;

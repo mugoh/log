@@ -1,0 +1,22 @@
+title: Mug'Ink
+name: "Mugoh's Tech Blog"
+author: Mugoh Mwaura
+twitter_username: mugoh_ks
+baseurl: "/mug-log"
+description: A space to document my learning 
+profile_url: "http://mugoh.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: <!--more-->
+plugins:
+  - jekyll-feed
+  - jekyll-archives
+exclude:
+  - Gemfile
+  - Gemfile.lock
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
