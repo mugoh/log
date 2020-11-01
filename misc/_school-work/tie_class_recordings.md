@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: "Recordings of the Online Class Lecturers"
+name: recordings
 date: 2020-08-19 12:00:00
 ---
 

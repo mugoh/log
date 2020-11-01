@@ -32,7 +32,7 @@ collections_dir: misc
 collections:
     school-work:
         output: true
-        permalink: /:collection/
+        permalink: /:collection/:name/
     posts:
         output: true
 
