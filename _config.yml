@@ -17,6 +17,7 @@ excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
   - jekyll-archives
+  - jemoji
 exclude:
   - Gemfile
   - Gemfile.lock
