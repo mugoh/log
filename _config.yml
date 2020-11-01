@@ -1,10 +1,14 @@
 title: Mug'Ink
-name: "Mugoh's Tech Blog"
+name: "Mugoh's Blog"
 author: Mugoh Mwaura
 twitter_username: mugoh_ks
 baseurl: "/mug-log"
 description: A space to document my learning 
 profile_url: "http://mugoh.github.io"
+image:
+    path: '/assets/images/profile_pic_400x400.jpg'
+    height: 100
+    width: 100
 
 # Build settings
 markdown: kramdown
