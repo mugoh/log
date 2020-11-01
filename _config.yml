@@ -6,7 +6,7 @@ baseurl: "/mug-log"
 description: A space to document my learning 
 profile_url: "http://mugoh.github.io"
 image:
-    path: '/assets/images/profile_pic_400x400.jpg'
+    path: "/assets/images/profile_pic_400x400.jpg"
     height: 100
     width: 100
 
@@ -26,3 +26,13 @@ kramdown:
   syntax_highlighter: rouge
 
 permalink: /:title/
+
+collections_dir: misc
+
+collections:
+    school-work:
+        output: true
+        permalink: /:collection/
+    posts:
+        output: true
+
