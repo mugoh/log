@@ -5,6 +5,13 @@ title: "Recordings of the Online Class Lecturers"
 date: 2020-08-20 12:00:00
 ---
 
+
+> Here's a collection of every recorded lecturer for the Telecom Engineering 4.2
+
+<!--more-->
+
+
+
 ### Recordings of the Online Class Lecturers on T.I.E 4th year, second semester(4.2)
 ##### [From July 2020 to Who-knows-when]
 
