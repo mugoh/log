@@ -1,7 +1,8 @@
 ---
 layout: post
 comments: true
-title: "Recordings of the Online Class Lecturers on T.I.E 4th year, second semester"
+title: "Recordings of the Online Class Lecturers"
+date: 2020-08-20 12:00:00
 ---
 
 ### Recordings of the Online Class Lecturers on T.I.E 4th year, second semester(4.2)
