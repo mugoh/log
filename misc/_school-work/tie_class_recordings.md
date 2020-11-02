@@ -99,3 +99,6 @@ Microprocessors
 | Lecture No. | Lecture Title | Link to class  | Date of Class | Lecturer | Relevant Notes/Slides
 | ----------- | ------------- | :--------------: | ------------- | -------- | :--------------------: |
 | Lec I        | Introduction to Assembly Programming using **[EMU8086](http://www.philadelphia.edu.jo/academics/qhamarsheh/uploads/emu8086.pdf)** **Watch out for _How to read buffers in Assembly (83:40) min_** | [Class video](https://sc.conference.ke/playback/presentation/2.0/playback.html?meetingId=ec531594b14e86354ecdd3bff3ae60798bede393-1595327194057) | July 21, 2020 | Mr. Lincoln Kamau | TBA
+| Lec II        | Procedures in Assembly | [Class video](https://sc.conference.ke/playback/presentation/2.0/playback.html?meetingId=ac856e58243121d19fd0786131678edd1f410ffd-1596694062223) | August 6, 2020 | Mr. Lincoln Kamau | TBA
+| Lec III        | Loops and Segmentation | [Class video](https://sc.conference.ke/playback/presentation/2.0/playback.html?meetingId=3cd64938220ea2e83db3c3a13d0a29a29c0607d6-1597138499868) | August 11, 2020 | Mr. Lincoln Kamau | TBA
+| Lec IV        | Strings and Addressing | [Class video](https://sc.conference.ke/playback/presentation/2.0/playback.html?meetingId=04f7867b2dd65d7dd68d138a20f48f774473f07d-1597747286344) | August 18, 2020 | Mr. Lincoln Kamau | TBA
