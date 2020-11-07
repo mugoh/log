@@ -6,9 +6,9 @@ baseurl: "/mug-log"
 description: A space to document my learning 
 profile_url: "http://mugoh.github.io"
 image:
-    path: "/assets/images/profile_pic_400x400.jpg"
-    height: 100
-    width: 100
+    path: /assets/images/profile_pic_400x400.png
+    height: 50
+    width: 50
 
 # Build settings
 markdown: kramdown
