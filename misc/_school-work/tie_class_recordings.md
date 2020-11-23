@@ -88,8 +88,8 @@ Microwave Devices and Applications
 | ----------- | ------------- | :--------------: | ------------- | :--------: | :---------------------: |
 | Lec I        | Introduction to Microwave Engineering (*Start time 3:54*) | [Class video](https://m.youtube.com/watch?feature=youtu.be&v=4JDilUic7Jc) | August 17, 2020 | Mr. Oteri Omae :baby_bottle: | TBA
 | Lec II      | Microwave Plane Waves | [Class Video](https://www.youtube.com/watch?v=Nhqi39UJGSM&feature=youtu.be) | August 24,  2020 | :baby_bottle:
-| Lec III     | Lab 1: Matlab Plots    | [Class video](https://youtu.be/uGTsGq-FkEo) | August 26, 2020 | :baby_bottle:
-
+| Lec III     | Lab 1: Matlab Plots    | [Class video](https://youtu.be/uGTsGq-FkEo) | August 26, 2020 | :baby_bottle: | 
+| Lec IV      | Propagation Effects of Electromagentic Waves | [Class video](https://youtu.be/uLbcY9sU5ZQ) | November 23, 2020 | :baby_bottle: |
 
 
 Microprocessors
