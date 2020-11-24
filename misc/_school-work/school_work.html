@@ -1,6 +1,11 @@
 ---
 layout: default
+name: schoolwork
+date: 2020-08-19 12:00:00
 ---
+
+<!--more-->
+
 <div class="home other-pages">
   <h1 class="page-heading">School work</h1>
   <ul class="posts">
@@ -8,7 +13,7 @@ layout: default
   {% for work in site.school-work %}
 
 
-  {% if work.url contains 'html' %}
+  {% if work.path contains 'html' %}
   {% assign rendr = false %}
   {% else %}
   {% assign rendr = true %}
