@@ -10,6 +10,12 @@ image:
     height: 50
     width: 50
 
+disqus:
+    shortname: mug-log
+
+url: https://mugoh.github.io/mug-log
+repository: mugoh/mugoh.github.io
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

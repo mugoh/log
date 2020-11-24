@@ -24,6 +24,8 @@ date: 2020-08-19 12:00:00
 
 
 
+**Contents**
+
 {:class="table-of-content"}
 * TOC
 {:toc}
@@ -36,7 +38,7 @@ Digital Communication Systems
 
 
 | Lecture No. | Lecture Title | Link to class  | Date of Class | Lecturer | Relevant Notes / Slides
-| ----------- | ------------- | -------------- | -----------   | -------- | ------------------------|
+| :----------- | :-------------: | :--------------: | :------------------ | :--------: | :------------: |
 | Lec III     |Entropy and Source Coding | [Class video](https://drive.google.com/drive/folders/1CB8A2O_e-K_6IItR1NUggKqqNbm1eMm2?usp=sharing) | August 4, 2020 | Eng. Julius Weru :sunglasses: | To be added (TBA)
 
 
@@ -52,7 +54,7 @@ Radio Wave Propagation
 
 
 | Lecture No. | Lecture Title | Link to class  | Date of Class | Lecturer | Relevant Notes/Slides |
-| ----------- | ------------- | -------------- | ------------- | -------- | :---------------------: |
+| :----------- | :-------------: | :--------------: | :------------------ | :--------: | :------------: |
 | Lec I        | Introduction to Radio Waves | [Class video](https://drive.google.com/drive/folders/1U631AV49AzcHuCUwjddZNjaxtDIC7Wfk?usp=sharing_eil&ts=5f2d35e2) | August 7, 2020 | Mrs. Cathy Onyango :woman: | TBA
 
 
