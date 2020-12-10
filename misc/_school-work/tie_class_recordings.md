@@ -92,6 +92,9 @@ Microwave Devices and Applications
 | Lec II      | Microwave Plane Waves | [Class Video](https://www.youtube.com/watch?v=Nhqi39UJGSM&feature=youtu.be) | August 24,  2020 | :baby_bottle:
 | Lec III     | Lab 1: Matlab Plots    | [Class video](https://youtu.be/uGTsGq-FkEo) | August 26, 2020 | :baby_bottle: | 
 | Lec IV      | Propagation Effects of Electromagentic Waves | [Class video](https://youtu.be/uLbcY9sU5ZQ) | November 23, 2020 | :baby_bottle: |
+| Lec V       | ... | _Not provided_ | Dec 02, 2020 | :baby_bottle: |
+| Lec VI       | TE, TM and TEM modes | [Class video](https://youtu.be/rOEu7QfIMKo) | Dec 09, 2020 | :baby_bottle: |
+| Lec VII       | TE, TM and TEM modes (II) | [Class video](https://youtu.be/yWo0V5GTntM) | Dec 17, 2020 | :baby_bottle: |
 
 
 Microprocessors
