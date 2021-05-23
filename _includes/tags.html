@@ -3,6 +3,12 @@
   {% assign ttags = post.tags | join:'|' | append:'|' %}
   {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
+
+
+{% for work in site.paper-summaries%}
+      {% assign ttags = work.tags | join:'|' | append:'|' %}
+      {% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
 {% assign rawtags = rawtags | split:'|' | sort %}
 
 {% assign site.tags = "" %}
