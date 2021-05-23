@@ -42,4 +42,6 @@ collections:
         permalink: /:collection/:name/
     posts:
         output: true
-
+    paper-summaries:
+        output: true
+        permalink: /:collection/:name/
