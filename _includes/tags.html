@@ -4,11 +4,12 @@
   {% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
 
-
-{% for work in site.paper-summaries%}
-      {% assign ttags = work.tags | join:'|' | append:'|' %}
-      {% assign rawtags = rawtags | append:ttags %}
+{% for post2 in site.paper-summaries %}
+  {% assign ttags2 = post2.tags | join:'|' | append:'|' %}
+  {% assign rawtags = rawtags | append:ttags2 %}
 {% endfor %}
+
+
 {% assign rawtags = rawtags | split:'|' | sort %}
 
 {% assign site.tags = "" %}

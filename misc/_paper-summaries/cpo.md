@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Constrained Policy Optimization"
-date: 2020-10-20 12:00:00
+date: 2020-09-18 12:00:00
 tags: paper-summary safety reward-design
 ---
 

@@ -10,12 +10,14 @@ date: 2020-06-01 12:00:00
   <h1 class="page-heading">Paper Summaries</h1>
   <p>
   This is a list of the summaries to some of the papers I've read. I'll summarize a paper when reading it in-depth.
-  Spoilers.. they are all Reinforcement Learning papers.
+  Spoiler.. they are all Reinforcement Learning papers.
   </p>
   <br>
   <ul class="post-list">
 
-  {% for work in site.paper-summaries %}
+  {% assign workarr = site.paper-summaries | sort: 'date' | reverse %}
+
+  {% for work in workarr %}
 
 
   {% if work.path contains 'html' %}

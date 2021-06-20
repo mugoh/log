@@ -368,7 +368,7 @@ Inverse Reinforcement Learning allows us to demonstrate desired behaviour to an 
 The benefit of recovering the intent is that the agent learns the most optimal way of reaching the goal - it does not blindly copy the expert's sub-optimal behaviour or mistakes. As a result, iRL promises more desirable performance compared to the expert policy.
 
 
-## Reference
+## References
 [1] C. Finn, P. Christiano, P. Abbeel, and S. Levine. [ A connection between generative adversarial networks, inverse reinforcement learning, and energy-based models ](https://arxiv.org/pdf/1611.03852), NIPS, 2016.
 
 [2] J. Fu, K. Luo, S. Levine, [ Learning Robust Rewards with Adversarial Inverse Reinforcement Learning ](https://arxiv.org/pdf/1710.11248), ICLR 2018.

@@ -45,3 +45,4 @@ collections:
     paper-summaries:
         output: true
         permalink: /:collection/:name/
+        sort_by: date
