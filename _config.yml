@@ -2,7 +2,7 @@ title: Mug'Ink
 name: "Mugoh's Blog"
 author: Mugoh Mwaura
 twitter_username: mugoh_ks
-baseurl: "/mug-log"
+baseurl: "/log"
 description: A space to document my learning 
 profile_url: "http://mugoh.github.io"
 image:
@@ -13,7 +13,7 @@ image:
 disqus:
     shortname: mug-log
 
-url: https://mugoh.github.io/mug-log
+url: https://mugoh.github.io/log
 repository: mugoh/mugoh.github.io
 
 # Build settings
