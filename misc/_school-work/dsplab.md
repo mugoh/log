@@ -25,7 +25,7 @@ You can access the said lab manual from [ here ]({{'assets/temp/ETI_2505_Labwork
 
     > Does the plot look beautiful? Motivate your answer
 
-_Oh, and this shit is written in Octave. If you fell in love with Matlab, it should still work fine. In case of error though, just point it out -- we'll resolve it so you can continue enjoying your relationship with Matlab._
+_Oh, and this is written in Octave. If you fell in love with Matlab, it should still work fine. In case of error though, just point it out -- we'll resolve it so you can continue enjoying your relationship with Matlab._
 
 
 # Lab1
@@ -38,10 +38,11 @@ $$
 Take $\omega = 0.8$
 ```matlab
     n = 1:40 % 40 samples
-    x_n = sin(w *n) 
+    w = 0.8
+    xn = sin(w *n) 
 
     % Plot stem of each x;
-    stem(sin(x4));
+    stem(sin(xn));
     xlabel('Time');
     title('f = Your w');
 
@@ -53,11 +54,11 @@ Using $\triangle T = 0.1$.
 ```matlab
  T = .1
  n = 1:T: 40;
- w = .1 % Omega
-  x_n = sin(w *n)
+ w = .8 % Omega
+  xn = sin(w *n)
 
  % Plot stem of each x;
- stem(sin(x4));
+ stem(sin(xn));
  xlabel('Time');
  title('f = 1/.1');
 ```
@@ -275,7 +276,8 @@ We shall use this function throughout the rest of the exercise
 ```matlab
 % Use linspace to get the required frequency
 
-number_of_samples = 500 % Modify this value to your own
+number_of_samples = 500 % Modify this value to 301 
+                        % See next exercise for the reason
 
 fq = linspace(-1.5, 1.5, number_of_samples)
 x = -10: .1: 20
