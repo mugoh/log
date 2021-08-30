@@ -218,6 +218,9 @@ x = 3 + sin(0.4 *n)
 
 % Convolve the signals
 y = conv(h, x)
+
+% Plot x, h then y
+stem(x) % Change to h then y
 ```
 
 Answer question in manual
@@ -232,6 +235,10 @@ xi = randn(1, 600)
 x = sin(.01 * n) + xi
 
 y = conv(h, x)
+
+% Plot x, h then y
+% We are using the h from exercise 1
+stem(x) % Change to h then y
 
 ```
 
