@@ -449,6 +449,110 @@ DTFT of $z(n)$
 ```
 
 # Lab 3: DFT and FFT
-## Exercise 1
 
 *Tukachokea hapo*
+
+Create a `dft` function and save it in a file `dft.m`. Give it these contents:
+```matlab
+function[DFT] = dft(x, N)
+  for k=0:N-1
+      for n = 0:N-1;
+        y(n+1) = x(n+1).*exp(-(1j*2*pi*k*n)/N);
+      end
+      DFT(k+1)= sum(y);
+  end
+ end
+```
+
+
+## Exercise 1
+
+Take $N=16$
+```matlab
+  N = 16 % Change to all other values of N for each run
+  
+  x = zeros(1, N)
+  x (1:15) = 1
+
+  X = dft(x, N)
+
+  % Absolute value of X dft
+  Xabs = abs(X)
+  
+  stem(Xabs)
+```
+
+Repeat for all other values of $N \in [16, 32, 64, 128,  256]$
+
+
+
+## Exericise 2
+
+Exactly the same as Exercise 1 -- we are just using `fft`. So replace `dft(x, N)` with `fft(x, N)` in the script above and do everything else you've done.
+
+
+
+## Exercise 3
+
+For all values of $N \in [16, 32, 64, 128,  256]$, compare the performance of DFT and FFT.
+`flops` function is outdated. We are going to use `tic, toc` instead. See [ this answer ](https://www.stat.uchicago.edu/~lekheng/courses/309f14/flops/) for more info.
+
+```matlab
+
+  N = 16 % Change to all other values of N for each run
+  
+  x = zeros(1, N)
+  x (1:15) = 1
+
+  % DFT
+  start = tic;
+  X = dft(x, N)
+  c_dft = toc(start)
+
+  % FFT
+  start = tic;
+  X = fft(x)
+  c_fft = toc(start)
+
+  Fn = c_dft/c_fft; % Note down this value
+```
+
+Not down the value of `Fn` above for each `N`. Change the values of `N` and run for each value in `[32, 64, 128, 256]`, each time, noting down the correspoinding value of `Fn`.
+
+Then plot `Fn` against `N`: So create a vector for all values of Fn you have noted down. e.g `Fn = [ 3 2 5 6 3 ]`. Create another for all Ns i.e., `[16 32 64 128 256]`
+
+Then plot:
+
+```matlab
+
+ stem(N, Fn)
+```
+
+## Exercise 4
+$$
+  x(n ) = e^{ j2 \pi f_1 n } + e^{ j2 \pi f_2 n }
+$$
+
+Take $M = 5$
+
+```matlab
+  f_1 = .2;
+  f_2 = .25;
+  j = sqrt(-1);
+
+  M = 5
+  N = 1024
+
+  n = 1: M
+  x = e.^(j*2*pi*f_1*n) + e.^(j*2*pi*f_2*n)
+  
+  X = fft(x_n, N)
+  Xabs = abs(X)
+  
+  stem(Xabs)
+```
+
+Repeat for all other values of $M \in [5, 10, 20, 40, 80]$.
+
+
+Good work 💃 🕺 !!
