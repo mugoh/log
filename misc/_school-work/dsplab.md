@@ -12,6 +12,7 @@ date: 2021-08-27 12:00:00
 * TOC
 {:toc}
 
+
 # Brief note
 This is a minimal question by question guide to the Digial Signal Processing(DSP) lab. Each approach provided is for an existing question from the lab manual; so please check just to make sure I'm not making things up. I may or may not be sober while writing this.
 
@@ -177,6 +178,7 @@ y = imag(x_n);
 
 
 clf;
+subplot(211)
 stem(n, x);
 
 
@@ -184,6 +186,7 @@ stem(n, x);
 title('Real component');
 ylabel('A');
 
+subplot(212)
 stem(n, y);
 
 title('Imaginary component');
@@ -287,8 +290,7 @@ number_of_samples = 500 % Modify this value to 301
                         % See next exercise for the reason
 
 fq = linspace(-1.5, 1.5, number_of_samples)
-x = -10: .1: 20
-x = zeros(1, number_of_samples)
+x = -20: .2: 40
 n = x
 
 x(x >= - 5 & x <=5) = 1
@@ -296,11 +298,12 @@ x(x != 1) = 0
 
 w = 2 * pi * fq;
 
-X = dtft(x_n, n, w)
+X = dtft(x, n, w)
 
 % Plot DTFT
 plot(w, X)
 % Add title, xlabel, blah blah blah
+% Escpecially blah, blah, blah
 
 ```
 ### Exercise 2
@@ -323,7 +326,7 @@ Start with $f_0 = 0.05$
 f0 = 0.05
 
 n = start: end_
-x = zeros(length(n))
+x = zeros(size(n))
 
 % Loop around inserting cos where the 
 % condition for x is met
@@ -333,7 +336,7 @@ for idx = 1: length(x)
 
     % Condition met
     % Tumekapata!!
-    if element > = -30 & element <=30
+    if element >= -30 & element <=30
         x(idx) = cos(2*pi* f0*element)
     end
 
@@ -402,7 +405,7 @@ $$
 Form the two sequences:
 
 ```matlab
-start = 0, end_ = 30, interval = .2 % Change these!!
+start = 0, end_t = 30, interval = .2 % Change these!!
 
 n = start: interval: end_t % Remember f = 301 points, length of n must equal length(f)
                     % Whatever your start, end_ is, remember that
@@ -411,11 +414,11 @@ n = start: interval: end_t % Remember f = 301 points, length of n must equal len
                     % But you won't be skinned for having exact values as everyone
                     % else. Isikustresss!
 
-x = zeros(n)
+x = zeros(size(n))
 y = x
 
 x(1:9) = 1
-y(0:14) = 2
+y(1:14) = 2
 
 ```
 
@@ -429,24 +432,27 @@ z = conv(x, y)
 
 DTFT of $z(n)$
 ```matlab
-    f = linspace(-1.5, 1.5, 301)
+ f = linspace(-1.5, 1.5, 301)
     w = 2 * pi * f;
 
-    X = dtft(n, x, w)
-    Y = dtft(n, y, w)
+    X = dtft(x, n, w)
+    Y = dtft(y, n, w)
 
     % Index for z(n) will be 1/2 the x(n), y(n) one
-    n  = n(0): interval/2: n(length(n))
+    nz  = n(1): interval/2: n(length(n))
     
-    Z = dtft(n, z, w) % A
+    Z = dtft(z,  nz, w) % A
 
     X_times_Y = X.* Y %B
     
     % Compare absolute values of A and B
 
-    plot(abs(X_times_Y))
-    plot(abs(Z))
+   plot(abs(X_times_Y))
+   % Comment the line below first,
+   % plot, then comment out the line above
+   plot(abs(Z))
 ```
+
 
 # Lab 3: DFT and FFT
 
@@ -525,7 +531,7 @@ Then plot:
 
 ```matlab
 
- stem(N, Fn)
+ semilogx(N, Fn)
 ```
 
 ## Exercise 4
@@ -546,7 +552,9 @@ Take $M = 5$
   n = 1: M
   x = e.^(j*2*pi*f_1*n) + e.^(j*2*pi*f_2*n)
   
-  X = fft(x_n, N)
+  % If using MATLAB, comment out the line below
+  % x =[x zeros(1, N - length(x))]
+  X = fft(x, N)
   Xabs = abs(X)
   
   stem(Xabs)
