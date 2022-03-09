@@ -1,0 +1,57 @@
+---
+layout: default
+name: paper summaries
+date: 2022-03-01 12:00:00
+---
+<!--more-->
+
+<div class="home other-pages">
+  <h1 class="page-heading">Paper Summaries</h1>
+  <p>
+  These are my solutions to the questions of the <a href="https://huyenchip.com/ml-interviews-book/">Machine Learning Interviews </a> book by Chip Huyen.
+  </p>
+  <br>
+  <ul class="post-list">
+
+  {% assign workarr = site.ml-interviews-book | sort: 'date' | reverse %}
+
+  {% for work in workarr %}
+
+
+  {% if work.path contains 'html' %}
+  {% assign rendr = false %}
+  {% else %}
+  {% assign rendr = true %}
+  {% endif %}
+
+  {% if rendr %}
+    <li>
+      <!--<a href="{{ work.url | relative_url }}">{{ work.title }}</a> ({{ work.date | date: "%b %-d, %Y" }})
+      -->
+
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">
+          <span>
+            {% for tag in work.tags %}
+              {% capture tag_name %}{{ tag }}{% endcapture %}
+              <a class="post-tag" href="{{ site.baseurl  }}/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr>&nbsp;</a>
+            {% endfor %}
+          </span>
+          <span style="margin-left: 10px;">{{ work.date | date: date_format }}
+          </span>
+          </span>
+
+        <h2>
+          <a class="post-link" href="{{ work.url | relative_url }}">{{ work.title | escape }}</a>
+          {% if work.excerpt %}
+            {{ work.excerpt }}
+          {% endif %}
+        </h2>
+
+    </li>
+
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
+
