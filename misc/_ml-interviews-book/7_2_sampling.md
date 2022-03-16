@@ -5,7 +5,7 @@ title: "Sampling and Creating Training Data"
 date: 2022-03-01 12:00:00
 ---
 
-> Chapter 7.2
+> Chapter 7.2: ML Workflows -- Sampling and training data
 <!--more-->
 
 {:class="table-of-content"}

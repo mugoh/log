@@ -131,7 +131,7 @@
     padding: 1px 5px;
     margin-left: 5px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-out;
     &:hover {
       border: 1px solid $brand-color;
       text-decoration: none;
